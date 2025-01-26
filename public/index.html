@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VHS Transfers Status</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div id="table"></div>
+    <script>
+        function updateTable() {
+            Papa.parse('vhs_transfers.csv', {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    const table = document.createElement('table');
+                    const headers = Object.keys(results.data[0]);
+                    
+                    // Create header row
+                    const thead = table.createTHead();
+                    const headerRow = thead.insertRow();
+                    headers.forEach(header => {
+                        const th = document.createElement('th');
+                        th.textContent = header;
+                        headerRow.appendChild(th);
+                    });
+                    
+                    // Create data rows
+                    const tbody = table.createTBody();
+                    results.data.forEach(row => {
+                        const tr = tbody.insertRow();
+                        headers.forEach(header => {
+                            const td = tr.insertCell();
+                            td.textContent = row[header];
+                        });
+                    });
+                    
+                    document.getElementById('table').innerHTML = '';
+                    document.getElementById('table').appendChild(table);
+                }
+            });
+        }
+        
+        updateTable();
+        setInterval(updateTable, 300000); // Update every 5 minutes
+    </script>
+</body>
+</html>
