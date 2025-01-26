@@ -4,47 +4,185 @@
     <title>VHS Transfers Status</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <style>
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
+        body {
+            background-color: #000;
+            color: #0ff;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #0ff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #0ff;
+        }
+
+        th {
+            background-color: #001f1f;
+            cursor: pointer;
+            position: relative;
+        }
+
+        th:hover {
+            background-color: #003f3f;
+        }
+
+        th::after {
+            content: '▼';
+            position: absolute;
+            right: 8px;
+            opacity: 0.3;
+        }
+
+        th.sort-asc::after {
+            content: '▼';
+            opacity: 1;
+        }
+
+        th.sort-desc::after {
+            content: '▲';
+            opacity: 1;
+        }
+
+        tr:nth-child(even) {
+            background-color: #001414;
+        }
+
+        tr:hover {
+            background-color: #002828;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        @keyframes scanline {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 255, 255, 0.1);
+            animation: scanline 8s linear infinite;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
+    <div class="scanline"></div>
+    <div class="title">VHS TRANSFER STATUS</div>
     <div id="table"></div>
+
     <script>
+        function extractTapeNumber(vhsString) {
+            const match = vhsString.match(/^(\d+)/);
+            return match ? match[1] : '';
+        }
+
+        function formatData(data) {
+            return data.map(row => ({
+                Deck: row.Deck,
+                'Tape #': extractTapeNumber(row.VHS),
+                Label: row.VHS.split(' ').slice(1).join(' '),
+                Timestamp: row.Timestamp,
+                Note: row.Note
+            }));
+        }
+
+        let currentSort = {
+            column: null,
+            direction: 'asc'
+        };
+
+        function sortTable(column, data) {
+            return data.sort((a, b) => {
+                let valueA = a[column];
+                let valueB = b[column];
+
+                if (column === 'Tape #') {
+                    valueA = parseInt(valueA) || 0;
+                    valueB = parseInt(valueB) || 0;
+                }
+
+                if (currentSort.direction === 'asc') {
+                    return valueA > valueB ? 1 : -1;
+                } else {
+                    return valueA < valueB ? 1 : -1;
+                }
+            });
+        }
+
         function updateTable() {
             Papa.parse('vhs_transfers.csv', {
                 download: true,
                 header: true,
                 complete: function(results) {
+                    const formattedData = formatData(results.data);
                     const table = document.createElement('table');
-                    const headers = Object.keys(results.data[0]);
-                    
+                    const headers = Object.keys(formattedData[0]);
+
                     // Create header row
                     const thead = table.createTHead();
                     const headerRow = thead.insertRow();
                     headers.forEach(header => {
                         const th = document.createElement('th');
                         th.textContent = header;
+                        th.onclick = () => {
+                            if (currentSort.column === header) {
+                                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+                            } else {
+                                currentSort.column = header;
+                                currentSort.direction = 'asc';
+                            }
+
+                            document.querySelectorAll('th').forEach(th => {
+                                th.classList.remove('sort-asc', 'sort-desc');
+                            });
+                            th.classList.add(`sort-${currentSort.direction}`);
+
+                            const sortedData = sortTable(header, formattedData);
+                            renderTableBody(sortedData, headers, table);
+                        };
                         headerRow.appendChild(th);
                     });
-                    
-                    // Create data rows
-                    const tbody = table.createTBody();
-                    results.data.forEach(row => {
-                        const tr = tbody.insertRow();
-                        headers.forEach(header => {
-                            const td = tr.insertCell();
-                            td.textContent = row[header];
-                        });
-                    });
-                    
+
+                    renderTableBody(formattedData, headers, table);
                     document.getElementById('table').innerHTML = '';
                     document.getElementById('table').appendChild(table);
                 }
             });
         }
-        
+
+        function renderTableBody(data, headers, table) {
+            const tbody = table.createTBody();
+            data.forEach(row => {
+                const tr = tbody.insertRow();
+                headers.forEach(header => {
+                    const td = tr.insertCell();
+                    td.textContent = row[header] || '';
+                });
+            });
+        }
+
         updateTable();
         setInterval(updateTable, 300000); // Update every 5 minutes
     </script>
