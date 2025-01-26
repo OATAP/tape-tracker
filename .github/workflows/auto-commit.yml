@@ -1,0 +1,26 @@
+name: Auto Commit CSV Changes
+
+on:
+  push:
+    paths:
+      - 'public/vhs_transfers.csv'
+  workflow_dispatch:
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Git
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          
+      - name: Commit and Push CSV changes
+        run: |
+          git add public/vhs_transfers.csv
+          git diff --staged --quiet || (git commit -m "Auto-update CSV file" && git push)
