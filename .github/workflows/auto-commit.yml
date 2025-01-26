@@ -3,7 +3,7 @@ name: Auto Commit CSV Changes
 on:
   push:
     paths:
-      - 'public/vhs_transfers.csv'
+      - 'vhs_transfers.csv'
   workflow_dispatch:
 
 jobs:
@@ -22,5 +22,5 @@ jobs:
           
       - name: Commit and Push CSV changes
         run: |
-          git add public/vhs_transfers.csv
-          git diff --staged --quiet || (git commit -m "Auto-update CSV file" && git push)
+          git add vhs_transfers.csv
+          git diff --staged --quiet || (git commit -m "Auto-update CSV file" && git push) 
