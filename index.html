@@ -102,7 +102,7 @@
             return data.map(row => ({
                 Deck: row.Deck,
                 'Tape #': extractTapeNumber(row.VHS),
-                Label: row.VHS.split(' ').slice(1).join(' '),
+                Label: row.VHS.split(' ').slice(1).join(' ').replace('.mp4', ''),
                 Timestamp: row.Timestamp,
                 Note: row.Note
             }));
@@ -166,8 +166,11 @@
                     });
 
                     renderTableBody(formattedData, headers, table);
-                    document.getElementById('table').innerHTML = '';
-                    document.getElementById('table').appendChild(table);
+                    const tableContainer = document.getElementById('table');
+                    while (tableContainer.firstChild) {
+                        tableContainer.removeChild(tableContainer.firstChild);
+                    }
+                    tableContainer.appendChild(table);
                 }
             });
         }
