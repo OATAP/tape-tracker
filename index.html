@@ -100,18 +100,21 @@
         };
 
         function extractTapeNumber(vhsString) {
+            if (!vhsString || typeof vhsString !== 'string') return '';
             const match = vhsString.match(/^(\d+)/);
             return match ? match[1] : '';
         }
 
         function formatData(data) {
-            return data.map(row => ({
-                Deck: row.Deck,
-                'Tape #': extractTapeNumber(row.VHS),
-                Label: row.VHS.split(' ').slice(1).join(' ').replace('.mp4', ''),
-                Timestamp: row.Timestamp,
-                Note: row.Note
-            }));
+            return data
+                .filter(row => row && row.VHS)
+                .map(row => ({
+                    Deck: row.Deck || '',
+                    'Tape #': extractTapeNumber(row.VHS),
+                    Label: row.VHS ? row.VHS.split(' ').slice(1).join(' ').replace('.mp4', '') : '',
+                    Timestamp: row.Timestamp || '',
+                    Note: row.Note || ''
+                }));
         }
 
         function sortData(column) {
