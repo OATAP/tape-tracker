@@ -93,6 +93,12 @@
     <div id="table"></div>
 
     <script>
+        let tableData = [];
+        let currentSort = {
+            column: null,
+            direction: 'asc'
+        };
+
         function extractTapeNumber(vhsString) {
             const match = vhsString.match(/^(\d+)/);
             return match ? match[1] : '';
@@ -108,13 +114,11 @@
             }));
         }
 
-        let currentSort = {
-            column: null,
-            direction: 'asc'
-        };
+        function sortData(column) {
+            const direction = currentSort.column === column && currentSort.direction === 'asc' ? 'desc' : 'asc';
+            currentSort = { column, direction };
 
-        function sortTable(column, data) {
-            return data.sort((a, b) => {
+            return [...tableData].sort((a, b) => {
                 let valueA = a[column];
                 let valueB = b[column];
 
@@ -123,11 +127,52 @@
                     valueB = parseInt(valueB) || 0;
                 }
 
-                if (currentSort.direction === 'asc') {
+                if (direction === 'asc') {
                     return valueA > valueB ? 1 : -1;
                 } else {
                     return valueA < valueB ? 1 : -1;
                 }
+            });
+        }
+
+        function renderTable(data) {
+            const table = document.createElement('table');
+            const headers = Object.keys(data[0]);
+            const thead = table.createTHead();
+            const headerRow = thead.insertRow();
+
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.textContent = header;
+                th.onclick = () => {
+                    document.querySelectorAll('th').forEach(th => {
+                        th.classList.remove('sort-asc', 'sort-desc');
+                    });
+                    const sortedData = sortData(header);
+                    th.classList.add(`sort-${currentSort.direction}`);
+                    renderTableBody(sortedData, table);
+                };
+                headerRow.appendChild(th);
+            });
+
+            renderTableBody(data, table);
+            const tableContainer = document.getElementById('table');
+            tableContainer.innerHTML = '';
+            tableContainer.appendChild(table);
+        }
+
+        function renderTableBody(data, table) {
+            if (table.tBodies.length > 0) {
+                table.removeChild(table.tBodies[0]);
+            }
+            
+            const tbody = table.createTBody();
+            data.forEach(row => {
+                const tr = tbody.insertRow();
+                Object.values(row).forEach(value => {
+                    const td = tr.insertCell();
+                    td.textContent = value || '';
+                });
             });
         }
 
@@ -136,58 +181,14 @@
                 download: true,
                 header: true,
                 complete: function(results) {
-                    const formattedData = formatData(results.data);
-                    const table = document.createElement('table');
-                    const headers = Object.keys(formattedData[0]);
-
-                    // Create header row
-                    const thead = table.createTHead();
-                    const headerRow = thead.insertRow();
-                    headers.forEach(header => {
-                        const th = document.createElement('th');
-                        th.textContent = header;
-                        th.onclick = () => {
-                            if (currentSort.column === header) {
-                                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-                            } else {
-                                currentSort.column = header;
-                                currentSort.direction = 'asc';
-                            }
-
-                            document.querySelectorAll('th').forEach(th => {
-                                th.classList.remove('sort-asc', 'sort-desc');
-                            });
-                            th.classList.add(`sort-${currentSort.direction}`);
-
-                            const sortedData = sortTable(header, formattedData);
-                            renderTableBody(sortedData, headers, table);
-                        };
-                        headerRow.appendChild(th);
-                    });
-
-                    renderTableBody(formattedData, headers, table);
-                    const tableContainer = document.getElementById('table');
-                    while (tableContainer.firstChild) {
-                        tableContainer.removeChild(tableContainer.firstChild);
-                    }
-                    tableContainer.appendChild(table);
+                    tableData = formatData(results.data);
+                    renderTable(tableData);
                 }
             });
         }
 
-        function renderTableBody(data, headers, table) {
-            const tbody = table.createTBody();
-            data.forEach(row => {
-                const tr = tbody.insertRow();
-                headers.forEach(header => {
-                    const td = tr.insertCell();
-                    td.textContent = row[header] || '';
-                });
-            });
-        }
-
         updateTable();
-        setInterval(updateTable, 300000); // Update every 5 minutes
+        setInterval(updateTable, 300000);
     </script>
 </body>
 </html>
