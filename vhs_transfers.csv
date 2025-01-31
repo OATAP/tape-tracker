@@ -1,50 +1,618 @@
 Deck,VHS,Timestamp,Note
-VHS A,"1010 Entertain Tape L King Thurs 97 May 15.mp4",2025-01-25 10:08,
-VHS A,"1016 Entertain Tape Sat 97 May 24.mp4",2025-01-25 17:02,
-VHS A,"765 Entertain Tape Sat 95 Dec 23.mp4",2025-01-25 23:16,
+VHS A,"1010 Entertain Tape L King Thurs 97 May 15",2025-01-25 10:08,
+VHS A,"1016 Entertain Tape Sat 97 May 24",2025-01-25 17:02,
+VHS A,"765 Entertain Tape Sat 95 Dec 23",2025-01-25 23:16,
 VHS B,"761 Entertain Tape Sun 95 Dec 17-19",2025-01-25 23:18,
-VHS A,"620 News Ent Tonight Fri 95 Sep 22-24.mp4",2025-01-26 09:48,
+VHS A,"620 News Ent Tonight Fri 95 Sep 22-24",2025-01-26 09:48,
 VHS B,"1014 Entertain Tape Sat 97 May 24",2025-01-26 09:52,
 VHS C,"645 News Ent Tonight Sun 95 Dec 17-19",2025-01-26 09:55,
-VHS A,"639 News Ent Tonight Wed 95 Nov 22-26.mp4",2025-01-26 17:06,
+VHS A,"639 News Ent Tonight Wed 95 Nov 22-26",2025-01-26 17:06,
 VHS C,"640 News Ent Tonight Mon 95 Nov 27",2025-01-26 17:08,
 VHS B,"641 News Ent Tonight Sat 95 Dec 2-3",2025-01-26 19:48,
-VHS A,"643 News Ent Tonight Fri 95 Dec 07.mp4",2025-01-26 23:20,
+VHS A,"643 News Ent Tonight Fri 95 Dec 07",2025-01-26 23:20,
 VHS C,"642 News Ent Tonight Mon 95 Dec 04-7",2025-01-26 23:22,
-VHS A,"877 News Ent Tonight D Lett Fri 97 Aug 08-10.mp4",2025-01-27 08:39,
+VHS A,"877 News Ent Tonight D Lett Fri 97 Aug 08-10",2025-01-27 08:39,
 VHS B,"875 News Ent Tonight D Lett Mon 97 Aug 04-06",2025-01-27 08:40,
-VHS A,"880 News Ent Tonight D Lett Thurs 97 Aug 14-15.mp4",2025-01-27 15:39,
+VHS A,"880 News Ent Tonight D Lett Thurs 97 Aug 14-15",2025-01-27 15:39,
 VHS B,"878 News Ent Tonight D Lett Sun 97 Aug 10",2025-01-27 15:41,
 VHS C,"876 NEws Ent TOnight D Lett Wed 97 Aug 6-8",2025-01-27 15:43,
-VHS A,"883 News Ent Tonight D Lett Wed 97 Aug 20.mp4",2025-01-27 23:33,
+VHS A,"883 News Ent Tonight D Lett Wed 97 Aug 20",2025-01-27 23:33,
 VHS C,"882 News Ent Tonight D Lett Mon 97 Aug 18-19",2025-01-27 23:34,
 VHS B,"881 News Ent Tonight D Lett Sat 97 Aug 16-17",2025-01-27 23:36,
-VHS A,"879 News Ent Tonight D Lett Tues 97 Aug 13-14.mp4",2025-01-28 07:03,
+VHS A,"879 News Ent Tonight D Lett Tues 97 Aug 13-14",2025-01-28 07:03,
 VHS C,"1137 Entertain Tape Sun 97 Sep 27",2025-01-28 07:05,
 VHS B,"1136 Entertain Tape Sat 97 Sep 27",2025-01-28 07:09,
-VHS A,"884 News Ent Tonight D Lett Thur 97 Aug 21-22.mp4",2025-01-28 13:25,
+VHS A,"884 News Ent Tonight D Lett Thur 97 Aug 21-22",2025-01-28 13:25,
 VHS C,"1139 Birds Ghoulies Sat 97 Sep 27-28",2025-01-28 13:26,
 VHS B,"1138 Entertain Tape Sat 97 Sep 27",2025-01-28 13:28,
-VHS A,"644 News Ent Tonight Mon 95 Dec 11-17.mp4",2025-01-28 19:46,
+VHS A,"644 News Ent Tonight Mon 95 Dec 11-17",2025-01-28 19:46,
 VHS B,"646 News Ent TOnight Wed 95 Dec 20-24",2025-01-28 22:17,
 VHS C,"1015 Entertain Tape L King Wed 97 May 21",2025-01-28 22:19,
-VHS A,"630 News Ent Tonight Sun 95 Oct 29-31.mp4",2025-01-29 07:09,
+VHS A,"630 News Ent Tonight Sun 95 Oct 29-31",2025-01-29 07:09,
 VHS C,"639 News Ent Tonight Sun 95 Nov 19-21",2025-01-29 07:10,
 VHS B,"637 News Ent Tonight Fri 95 Nov 17",2025-01-29 07:12,
 VHS C,"638 News Ent TOnight Sun 95 Nov 19-21",2025-01-29 13:21,
-VHS A,"628 News Ent TOnight Mon 95 Oct 23-26.mp4",2025-01-29 13:23,
+VHS A,"628 News Ent TOnight Mon 95 Oct 23-26",2025-01-29 13:23,
 VHS B,"629 News Ent Tonight Fri 95 Oct 27-29",2025-01-29 13:28,
-VHS A,"631 News Ent Tonight Wed 95 Nov 1-3.mp4",2025-01-29 23:28,
+VHS A,"631 News Ent Tonight Wed 95 Nov 1-3",2025-01-29 23:28,
 VHS C,"633 News Ent Tonight Sun 95 Nov 5-7",2025-01-29 23:30,
 VHS B,"632 News Ent Tonight Sat 95 Nov 4-5",2025-01-29 23:33,
-VHS A,"624 News Ent Tonight Wed 95 Oct 4-6.mp4",2025-01-30 09:47,
+VHS A,"624 News Ent Tonight Wed 95 Oct 4-6",2025-01-30 09:47,
 VHS C,"634 News Ent TOnight Wed 95 Nov 8-11",2025-01-30 09:50,
 VHS B,"635 News Ent Tonight Sun 95 Nov 12",2025-01-30 10:26,
-VHS A,"621 Nes Ent Tonight Mon 95 Sep 25-28.mp4",2025-01-30 16:45,
+VHS A,"621 Nes Ent Tonight Mon 95 Sep 25-28",2025-01-30 16:45,
 VHS B,"623 News Ent Tonight Sun 95 Oct 1-3",2025-01-30 16:46,
 VHS B,"750 Entertain Tape Sat 95 Dec 02",2025-01-30 23:24,
 VHS C,"622 News Ent Tonight Fri 95 Sep 29-01",2025-01-30 23:24,
-VHS A,"751 Entertain Tape Sat 95 Dec 02.mp4",2025-01-30 23:25,
-VHS A,"753 Entertain Tape Mon 95 Dec 04-6.mp4",2025-01-31 09:07,
+VHS A,"751 Entertain Tape Sat 95 Dec 02",2025-01-30 23:25,
+VHS A,"753 Entertain Tape Mon 95 Dec 04-6",2025-01-31 09:07,
 VHS B,"764 Entertain Tape Thur 95 Dec 21-23",2025-01-31 09:12,
 VHS C,"763 Entertain Tape Thur 95 Dec 21-23",2025-01-31 09:13,
+U,"0009 Entertainment Sat 87 Oct 24 - Sun 87 Nov 17",2025-01-01 00:00,Before 1/25
+U,"0710 Entertain Tape - Sun 95 Oct 1-2",2025-01-01 00:00,Before 1/25
+U,"0712 Entertain Tape Wed 95 Oct 4-6",2025-01-01 00:00,Before 1/25
+U,"0719 Entertain Tape - Sun 95 Oct 22",2025-01-01 00:00,Before 1/25
+U,"0720 Entertain Tape Mon 95 Oct 23-27",2025-01-01 00:00,Before 1/25
+U,"0723 Entertain Tape - Sat 95 Oct 28",2025-01-01 00:00,Before 1/25
+U,"0736 Entertain Tape - Sun 95 Nov 12-17",2025-01-01 00:00,Before 1/25
+U,"0737 Entertain Tape Tues 95 Nov 14-15",2025-01-01 00:00,Before 1/25
+U,"0747 Entertain Tape - Fri 94 Nov 24-25",2025-01-01 00:00,Before 1/25
+U,"0913 Entertain Tape Tues 95 July 16-18",2025-01-01 00:00,Before 1/25
+U,"0914 Entertain Tape Thurs 96 July 18",2025-01-01 00:00,Before 1/25
+U,"0957 Entertain Tape Sun 96 Aug 25",2025-01-01 00:00,Before 1/25
+U,"0966 Entertain Tape Sun 96 Sept 01",2025-01-01 00:00,Before 1/25
+U,"0978 Entertainment Tape Sun 96 Sept 15",2025-01-01 00:00,Before 1/25
+U,"1023 Entertaine Tape - Sat 97 June 07",2025-01-01 00:00,Before 1/25
+U,"1704 Entertain Tape - Fri 98 Nov 13",2025-01-01 00:00,Before 1/25
+U,"1708 Entertain Tape Sat 98 Nov 14-15",2025-01-01 00:00,Before 1/25
+U,"1709 Entertain Tape Sun 98 Nov 15-16",2025-01-01 00:00,Before 1/25
+U,"1710 Entertain Tape Mon 98 Nov 16 -17",2025-01-01 00:00,Before 1/25
+U,"1712 Entertain Tape Wed 98 Nov 18-20",2025-01-01 00:00,Before 1/25
+U,"1713 Entertain Tape Thurs 98 Nov 19",2025-01-01 00:00,Before 1/25
+U,"1715 Entertain Tape Thurs 98 Nov 19",2025-01-01 00:00,Before 1/25
+U,"1716 Entertainment Tape FRI 1998 NOV 20_21",2025-01-01 00:00,Before 1/25
+U,"1717 Entertain Tape Tues 98 Nov 03",2025-01-01 00:00,Before 1/25
+U,"1718 Entertain Tape - Fri 98 Nov 20-21",2025-01-01 00:00,Before 1/25
+U,"1719 Entertain Tape Sat 98 Nov 21",2025-01-01 00:00,Before 1/25
+U,"1720 Entertain Tape Sat 98 Nov 21",2025-01-01 00:00,Before 1/25
+U,"1721 Entertain Tape Sat 98 Nov 21-22",2025-01-01 00:00,Before 1/25
+U,"1722 Entertain Tape Sat 98 Nov 21-22",2025-01-01 00:00,Before 1/25
+U,"1725 Entertain Tape Sun 98 Nov 22-25",2025-01-01 00:00,Before 1/25
+U,"1726 Entertain Tape Mon 98 Nov 23-24",2025-01-01 00:00,Before 1/25
+U,"1727 Entertain Tape - Mon 98 Nov 23-25",2025-01-01 00:00,Before 1/25
+U,"1728 Entertain Tape Tues 98 Nov 24",2025-01-01 00:00,Before 1/25
+U,"1729 Entertainment - Wed 98 Nov 25",2025-01-01 00:00,Before 1/25
+U,"1730 Entertain Tape Wed 98 Nov 25-05",2025-01-01 00:00,Before 1/25
+U,"1732 Entertain Tape Fri 98 Nov 27",2025-01-01 00:00,Before 1/25
+U,"1733 Entertain Tape Fri 98 Nov 27-28",2025-01-01 00:00,Before 1/25
+U,"1734 Entertain Tape - Sat 98 Nov 28-30",2025-01-01 00:00,Before 1/25
+U,"1736 Entertain Tape Sun 98 Nov 29-30",2025-01-01 00:00,Before 1/25
+U,"1738 Entertain Tape Mon 98 Nov 30-02",2025-01-01 00:00,Before 1/25
+U,"1739 Entertain Tape Wed 98 Dec 2-6",2025-01-01 00:00,Before 1/25
+U,"1740 Entertain Tape Fri 98 Dec 04 )Cont of Ent 12-10)",2025-01-01 00:00,Before 1/25
+U,"1741 Entertain Tape Sun 98 Dec 6",2025-01-01 00:00,Before 1/25
+U,"1743 Entertina Tape SUn 98 Dec 06",2025-01-01 00:00,Before 1/25
+U,"1743 Entertina Tape SUn 98 Dec 06 (2)",2025-01-01 00:00,Before 1/25
+U,"1748 Entertain Tape Thurs 98 Dec 10-13",2025-01-01 00:00,Before 1/25
+U,"1748 Entertain Tape Thurs 98 Dec 10-13 2",2025-01-01 00:00,Before 1/25
+U,"1749 Entertain Tape - Thurs 98 Dec 10-13",2025-01-01 00:00,Before 1/25
+U,"1750 Entertain Tape - Fri 98 Dec 11-13",2025-01-01 00:00,Before 1/25
+U,"1750 Entertain Tape - Fri 98 Dec 11-13 2",2025-01-01 00:00,Before 1/25
+U,"1751 Entertain Tape Fri 98 Dec 11-13",2025-01-01 00:00,Before 1/25
+U,"1752 Entertain Tape Fri 98 Dec 11-13",2025-01-01 00:00,Before 1/25
+U,"1755 Entertain Tape - Tues 98 Dec 15-16 (End Iraq Attack)",2025-01-01 00:00,Before 1/25
+U,"1756 Entertain Tape - Tues 98 Dec 15-16 (Iraq)",2025-01-01 00:00,Before 1/25
+U,"1758 Entertain Tape Thurs 98 Dec 17-18",2025-01-01 00:00,Before 1/25
+U,"1760 Entertain Tape Thurs 98 Dec 17",2025-01-01 00:00,Before 1/25
+U,"1767 Entertain Tape Tues 98 Dec 22",2025-01-01 00:00,Before 1/25
+U,"1770 Entertain Tape Wed 98 Dec 23-24",2025-01-01 00:00,Before 1/25
+U,"1776 Entertain Tape Sun 98 Dec 27-28",2025-01-01 00:00,Before 1/25
+U,"1777 Entertain Tape Tues 98 Dec 28",2025-01-01 00:00,Before 1/25
+U,"1778 Entertain Tape Mon 98 Dec 28-29",2025-01-01 00:00,Before 1/25
+U,"1779 Entertain Tape Wed 98 Dec 30-31",2025-01-01 00:00,Before 1/25
+U,"1780 Entertain Tape Wed 98 Dec 30-31",2025-01-01 00:00,Before 1/25
+U,"1782 Entertain Tape - Fri 99 Jan 01",2025-01-01 00:00,Before 1/25
+U,"1787 Entertain Tape Mon 98 Nov 30",2025-01-01 00:00,Before 1/25
+U,"3245 Entertain Tape Thurs 2001 July 26",2025-01-01 00:00,Before 1/25
+U,"3247 Entertain Tape Sun 2001 July 20",2025-01-01 00:00,Before 1/25
+U,"3248 Entertain Tape Sat 2001 July 28",2025-01-01 00:00,Before 1/25
+U,"3266 Entertain Tape Mon 2001 Aug 6-7",2025-01-01 00:00,Before 1/25
+U,"3278 Entertain Tape Sun 2001 Aug 12-13",2025-01-01 00:00,Before 1/25
+U,"3288 Entertain Tape Fri 2001 Aug 17-19",2025-01-01 00:00,Before 1/25
+U,"3290 Entertain Tape Sat 2001 Aug 18-19",2025-01-01 00:00,Before 1/25
+U,"3293 Entertain Tape Mon 2001 Aug 20",2025-01-01 00:00,Before 1/25
+U,"3294 Entertainment Tape MON 2001 AUG 20",2025-01-01 00:00,Before 1/25
+U,"3295 Entertain Tape Mon 2001 Aug 20-21",2025-01-01 00:00,Before 1/25
+U,"3303 Entertain Tape Fri 2001 Aug 24",2025-01-01 00:00,Before 1/25
+U,"3306 Entertain Tape Sat 2001 Aug 25-26",2025-01-01 00:00,Before 1/25
+U,"3311 Entertain Tape Fri 2001 Sept 7",2025-01-01 00:00,Before 1/25
+U,"3315 Entertain Tape Fri 2001 Aug 31",2025-01-01 00:00,Before 1/25
+U,"3316 Entertain Tape Fri 2001 Aug 31",2025-01-01 00:00,Before 1/25
+U,"3318 Entertain Tape Sat 2001 Sept 01",2025-01-01 00:00,Before 1/25
+U,"3319 Entertain Tape Sat 2001 Sept 1-2",2025-01-01 00:00,Before 1/25
+U,"3320 Entertain Tape Sat 2001 Sept 1-2",2025-01-01 00:00,Before 1/25
+U,"3321 Entertain Tape Sun 2001 Sept 2",2025-01-01 00:00,Before 1/25
+U,"3322 Entertain Tape Mon 9-3-01",2025-01-01 00:00,Before 1/25
+U,"3323 Entertain Tape - Mon 9-3-01",2025-01-01 00:00,Before 1/25
+U,"3324 Entertain Tape Tuesday 9-4-01",2025-01-01 00:00,Before 1/25
+U,"3325 Entertain Tape Tues 9-4-01",2025-01-01 00:00,Before 1/25
+U,"3327 Entertain Tape Wed 9-5-01",2025-01-01 00:00,Before 1/25
+U,"3328 Today Show ENT WED 9-5-01",2025-01-01 00:00,Before 1/25
+U,"3329 Entertain Tape Thu 9-6-01",2025-01-01 00:00,Before 1/25
+U,"3330 Today Show ENT Thu 9-6-01",2025-01-01 00:00,Before 1/25
+U,"3332 Today Show Ent Fri 9-7-01",2025-01-01 00:00,Before 1/25
+U,"3333 Entertain Tape Sat 9-8-01",2025-01-01 00:00,Before 1/25
+U,"3335 Entertain Tape - Sat 2001 Sept 08 - 09",2025-01-01 00:00,Before 1/25
+U,"3336 Entertain Tape - Fri 9-7 9-9-01",2025-01-01 00:00,Before 1/25
+U,"3337 Entertain Tape - Mon 2001 Sept 10",2025-01-01 00:00,Before 1/25
+U,"3338 Entertain Tape - Mon 2001 Sept 10",2025-01-01 00:00,Before 1/25
+U,"3339 Entertain Tape - Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"3340 Entertain Tape - Tues 2001 Sept 11-12",2025-01-01 00:00,Before 1/25
+U,"3341 Entertain Tape Wed 2001 Sept 12",2025-01-01 00:00,Before 1/25
+U,"3342 Entertain Tape - Wed 2001 Sept 12-13",2025-01-01 00:00,Before 1/25
+U,"3343 Entertain Tape - Thurs 2001 Sept 13",2025-01-01 00:00,Before 1/25
+U,"3344 Entertain Tape Fri 2001 Sept 14",2025-01-01 00:00,Before 1/25
+U,"3345 Entertain Tape Fri 2001 Sept 14-16",2025-01-01 00:00,Before 1/25
+U,"3346 Entertain Tape Sat 2001 Sept 15-16",2025-01-01 00:00,Before 1/25
+U,"3347 Entertain Tape Sat 2001 Sept 15-16",2025-01-01 00:00,Before 1/25
+U,"3348 Entertain Tape - Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"3349 Entertain Tape Sat 2001 Sept 15-16",2025-01-01 00:00,Before 1/25
+U,"3350 Entertain Tape Mon 2001 Sept 17",2025-01-01 00:00,Before 1/25
+U,"3351 Entertain Tape Tues 2001 Sept 18",2025-01-01 00:00,Before 1/25
+U,"3352 Ente5rtain Tape Tues 2001 Sept 18",2025-01-01 00:00,Before 1/25
+U,"3353 Entertain Tape Tues 2001 Sept 18-20",2025-01-01 00:00,Before 1/25
+U,"3354 Entertain Tape Wed 2001 Sept 19",2025-01-01 00:00,Before 1/25
+U,"3355 Entertain Tape Thurs 2001 Sept 20",2025-01-01 00:00,Before 1/25
+U,"3356 Entertain Tape Fri 2001 Sept 21",2025-01-01 00:00,Before 1/25
+U,"3357 Entertain Tape Fri 2001 Sept 21",2025-01-01 00:00,Before 1/25
+U,"3358 Entertain Tape Fri 2001 Sept 21-23",2025-01-01 00:00,Before 1/25
+U,"3359 Entertain Tape Fri 2001 Sept 21-23",2025-01-01 00:00,Before 1/25
+U,"3360 Entertain Tape Sat 2001 Sept 22-23",2025-01-01 00:00,Before 1/25
+U,"3361 Entertain Tape Sun 2001 Sept 23",2025-01-01 00:00,Before 1/25
+U,"3362 Entertain Tape Sun 2001 Sept 23",2025-01-01 00:00,Before 1/25
+U,"3363 Entertain Tape Mon 2001 Sept 24",2025-01-01 00:00,Before 1/25
+U,"3364 Entertain Tape Mon 2001 Sept 24-25",2025-01-01 00:00,Before 1/25
+U,"3365 Entertain Tape Tues 2001 Sept 25",2025-01-01 00:00,Before 1/25
+U,"3366 Entertain Tape Wed 2001 Sept 26",2025-01-01 00:00,Before 1/25
+U,"3367 Entertain Tape Wed 2001 Sept 26",2025-01-01 00:00,Before 1/25
+U,"3368 Entertain Tape Thurs 2001 Sept 27-30",2025-01-01 00:00,Before 1/25
+U,"3369 Entertain Tape Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"3370 Entertain Tape Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"3372 Entertain Tape Sat 2001 Sept 29-30",2025-01-01 00:00,Before 1/25
+U,"3373 Entertain Tape Sat 2001 Sept 29-30",2025-01-01 00:00,Before 1/25
+U,"3374 Entertain Tape Mon 2001 Sept 24",2025-01-01 00:00,Before 1/25
+U,"3375 Entertain Tape Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"3376 Entertain Tape Sun 2001 Sept 30",2025-01-01 00:00,Before 1/25
+U,"3377 Entertain Tape + Terrorist Attack Sun 2001 Sept 30",2025-01-01 00:00,Before 1/25
+U,"3378 Entertain Tape Mon 2001 Oct 01",2025-01-01 00:00,Before 1/25
+U,"3379 Entertain Tape Mon 2001 Oct 01",2025-01-01 00:00,Before 1/25
+U,"3380 Entertain Tape Tues 2001 Oct 02",2025-01-01 00:00,Before 1/25
+U,"3381 Entertainment WED 2001 Oct 03",2025-01-01 00:00,Before 1/25
+U,"3387 Entertain Tape Fri 2001 Oct 5-7",2025-01-01 00:00,Before 1/25
+U,"3388 Entertain Tape News War Sat 2001 Oct 06-07",2025-01-01 00:00,Before 1/25
+U,"3389 Entertain Tape Sat 2001 oct 6-7",2025-01-01 00:00,Before 1/25
+U,"3392 Enteratin Tape Sun 2001 Aug 19",2025-01-01 00:00,Before 1/25
+U,"3394 Entertain Tape Tues 2001 Oct 09",2025-01-01 00:00,Before 1/25
+U,"3397 Entertain Tape Wed 2001 Oct 10",2025-01-01 00:00,Before 1/25
+U,"3398 Entertain Tape Thurs 2001 Oct 11-13",2025-01-01 00:00,Before 1/25
+U,"3400 Entertain Tape FRI 2001 OCT 12-14",2025-01-01 00:00,Before 1/25
+U,"U Entertain Tape Fri 98 Dec 11-12",2025-01-01 00:00,Before 1/25
+U,"U Entertain Tape Fri 98 Nov 6-12",2025-01-01 00:00,Before 1/25
+U,"0053 J Carson Mon 88 Nov 28 - Dec 7",2025-01-01 00:00,Before 1/25
+U,"0060 J Carson Thu 89 Feb 16 - Wed 89 Feb 22",2025-01-01 00:00,Before 1/25
+U,"447 J Leno Fri 98 Oct 16-20",2025-01-01 00:00,Before 1/25
+U,"448 JLeno Wed 98 Oct 21-26",2025-01-01 00:00,Before 1/25
+U,"449 J Leno Tues 98 Oct 27-03",2025-01-01 00:00,Before 1/25
+U,"450 J Leno Wed 98 Nov 4-9",2025-01-01 00:00,Before 1/25
+U,"451 J Leno Tues 98 Nov 10-17",2025-01-01 00:00,Before 1/25
+U,"452 J Leno Tues 98 Nov 17-20",2025-01-01 00:00,Before 1/25
+U,"453 J Leno Mon 98 Nov 23-26",2025-01-01 00:00,Before 1/25
+U,"454 J Leno Fri 98 Nov 27-11",2025-01-01 00:00,Before 1/25
+U,"455 J Leno Mon 98 Nov 30",2025-01-01 00:00,Before 1/25
+U,"455 J Leno Mon 98 Nov 30 (2)",2025-01-01 00:00,Before 1/25
+U,"456 J Leno Wed 98 Dec 09-15",2025-01-01 00:00,Before 1/25
+U,"649 J Leno Mon 2001 Sept 3",2025-01-01 00:00,Before 1/25
+U,"650 J. Leno - Fri 2001 Sept 07 17-20",2025-01-01 00:00,Before 1/25
+U,"651  J. Leno - Mon 2001 Sept 10-13",2025-01-01 00:00,Before 1/25
+U,"652 J Leno Fri 2001 Sept 21, 28",2025-01-01 00:00,Before 1/25
+U,"653 J Leno Mon 2001 Sept 24-27",2025-01-01 00:00,Before 1/25
+U,"654 J Leno Mon 2001 Oct 1-4",2025-01-01 00:00,Before 1/25
+U,"657 J Leno Mon 2001 Oct 15-18",2025-01-01 00:00,Before 1/25
+U,"053 Natl Geographic Explorer - Sun 98 Nov 22",2025-01-01 00:00,Before 1/25
+U,"112 Natl Geographic Explorer Sun 2001 Sept 09 16",2025-01-01 00:00,Before 1/25
+U,"113 Natl Geo Explorer Sun 2001 Sept 23, 30",2025-01-01 00:00,Before 1/25
+U,"114 National Geographic SUN 2001 June 7_June14",2025-01-01 00:00,Before 1/25
+U,"000U News + Entertainment tonight - Mon 89 May 08-15",2025-01-01 00:00,Before 1/25
+U,"0033 News Entertainment Tonight Tues 89 June 13 - Fri June 16",2025-01-01 00:00,Before 1/25
+U,"0053 News Entertainment Tonight Tues 89 Oct 17 - Sun Oct 22, Oct 27",2025-01-01 00:00,Before 1/25
+U,"0729 News Ent Tonight Sun 96 Sept 08",2025-01-01 00:00,Before 1/25
+U,"0734 News Ent. Tonight Thurs 96 Sept 19-22",2025-01-01 00:00,Before 1/25
+U,"0742 News Ent Tonight Sun 96 Oct 6-9",2025-01-01 00:00,Before 1/25
+U,"1121 News Ent TOnight D Lett - Fri 98 Nov 20-22",2025-01-01 00:00,Before 1/25
+U,"1137 News Ent Tonight D Lett Sun 98 Dec 20",2025-01-01 00:00,Before 1/25
+U,"1139 News Ent TOnight D Lett - Wed 98 Dec 23-24",2025-01-01 00:00,Before 1/25
+U,"1142 News Ent Tonight D Lett Sun 98 Dec 27-28",2025-01-01 00:00,Before 1/25
+U,"1144 News Ent tonight Thurs 98 Dec 31-01",2025-01-01 00:00,Before 1/25
+U,"1748 News Ent Tonight D Lett Sun 2001 Aug 5-6",2025-01-01 00:00,Before 1/25
+U,"1749 News Ent Tonight D Lett Tues 2001 Aug 7",2025-01-01 00:00,Before 1/25
+U,"1759 News Ent Tonight D Lett Fri 2001 Aug 17",2025-01-01 00:00,Before 1/25
+U,"1760 News Ent Tonight D Lett Sat 2001 Aug 18",2025-01-01 00:00,Before 1/25
+U,"1761 News Ent TOnight D Lett Sun 2001 Aug 19",2025-01-01 00:00,Before 1/25
+U,"1774 News Ent Tonight Sat 9-1-01",2025-01-01 00:00,Before 1/25
+U,"1775 News Ent Tonight Sun 9-2-01",2025-01-01 00:00,Before 1/25
+U,"1776 News Ent Tonight D Lett. Sun 2001 Sept 02",2025-01-01 00:00,Before 1/25
+U,"1777 News Ent D Lett Mon 9-3-01",2025-01-01 00:00,Before 1/25
+U,"1778 News Ent D Lett Tues 9-4-01",2025-01-01 00:00,Before 1/25
+U,"1779 News Ent D Lett Wed 9-5-01",2025-01-01 00:00,Before 1/25
+U,"1780 News Ent D Let Thu 9-6-01",2025-01-01 00:00,Before 1/25
+U,"1781 News Ent Tonight D Lett Fri 2001 Sept 07",2025-01-01 00:00,Before 1/25
+U,"1782 News Ent D Let Fri 9-7-01",2025-01-01 00:00,Before 1/25
+U,"1783 News Ent Tonight D Lett Sat 2001 Sept 08",2025-01-01 00:00,Before 1/25
+U,"1784 News Ent. Tonight D. Lett - Sun 2001 Sept 09",2025-01-01 00:00,Before 1/25
+U,"1785 News Ent Tonight D Lett - Mon 2001 Sept 10",2025-01-01 00:00,Before 1/25
+U,"1786 News - Terrorist Attack  Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"1787 News - Terrorist Attack - Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"1788 News Ent Tonight D Lett - Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"1789 News Ent Tonight D. Lett - Wed 2001 Sept 12",2025-01-01 00:00,Before 1/25
+U,"1790 News Terrorist Attack Wed 2001 Sept 12",2025-01-01 00:00,Before 1/25
+U,"1791 News Terrorist Attack Thurs 2001 Sept 13",2025-01-01 00:00,Before 1/25
+U,"1792 News Ent Tonight D Lett Thu 2001 Sept 13",2025-01-01 00:00,Before 1/25
+U,"1793 News Terrorist Attack - Fri 2001 Sept 14",2025-01-01 00:00,Before 1/25
+U,"1794 News Ent Tonight D Lett Fri 2001 Sept 14",2025-01-01 00:00,Before 1/25
+U,"1795 News Terrorist Attack Sat 2001 Sept 15",2025-01-01 00:00,Before 1/25
+U,"1796 News Terrorist Attack Sat 2001 Sept 15-16",2025-01-01 00:00,Before 1/25
+U,"1797 News Terrorist Attafck Sun 2001 Sept 16",2025-01-01 00:00,Before 1/25
+U,"1798 News Ent Tonight D Lett Sun 2001 Sept 16",2025-01-01 00:00,Before 1/25
+U,"1799 News Terrorist Attacks Mon 2001 Sept 17",2025-01-01 00:00,Before 1/25
+U,"1800 News Ent Tonight D Lett Mon 2001 Sept 17",2025-01-01 00:00,Before 1/25
+U,"1801 News Terrorist Attack Tues 2001 Sept 18",2025-01-01 00:00,Before 1/25
+U,"1802 News Ent Tonight D Lett. Tues 2001 Sept 18",2025-01-01 00:00,Before 1/25
+U,"1803 News - CSPAN Wed 2001 Sept 19",2025-01-01 00:00,Before 1/25
+U,"1804 News Ent Tonight D Lett Wed 2001 Sept 19",2025-01-01 00:00,Before 1/25
+U,"1805 News Ent Tonight D Lett Thurs 2001 Sept 20",2025-01-01 00:00,Before 1/25
+U,"1807 News Ent Tonight D Lett Thurs 2001 Sept 20-21",2025-01-01 00:00,Before 1/25
+U,"1808 News Terrorist Attack Fri 2001 Sept 21",2025-01-01 00:00,Before 1/25
+U,"1809 News Ent Tonight D Lett Sat 2001 Sept 22",2025-01-01 00:00,Before 1/25
+U,"1810 News Terrorist Attack Sat 2001 Sept 22",2025-01-01 00:00,Before 1/25
+U,"1811 News Ent Tonight D Lett. Sun 2001 Sept 23",2025-01-01 00:00,Before 1/25
+U,"1812 News Ent Tonight D Lett Sun 2001 Sept 23",2025-01-01 00:00,Before 1/25
+U,"1813 News Ent. Tonight D Lett. Mon 2001 Sept 24",2025-01-01 00:00,Before 1/25
+U,"1814 News Ent TOnight D Lett Tues 2001 Sept 25",2025-01-01 00:00,Before 1/25
+U,"1815 News Terrorist Attack Wed 2001 Sept 26",2025-01-01 00:00,Before 1/25
+U,"1816 News Ent Tonight D Lett Wed 2001 Sept 26",2025-01-01 00:00,Before 1/25
+U,"1817 News Terrorist Attack Thurs 2001 Sept 27",2025-01-01 00:00,Before 1/25
+U,"1818 News Terrorist Attack Thurs 2001 Sept 27",2025-01-01 00:00,Before 1/25
+U,"1819 News Ent Tonight D Lett. Thurs 2001 Sept 27",2025-01-01 00:00,Before 1/25
+U,"1820 News Ent Tonight D Lett. Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"1821 News Ent. Tonight D. Lett. Sat 2001 Sept 29",2025-01-01 00:00,Before 1/25
+U,"1822 News Ent Tonight D Lett Sat 2001 Sept 29-30",2025-01-01 00:00,Before 1/25
+U,"1824 News Terrorist Attack Mon 2001 Oct 1",2025-01-01 00:00,Before 1/25
+U,"1825 News Ent Tonight D Lett Mon 2001 Oct 1",2025-01-01 00:00,Before 1/25
+U,"1826 News Ent Tonight D Lett Tues 2001 Oct 2",2025-01-01 00:00,Before 1/25
+U,"1832 News Terrorist Attack Fri 2001 Oct 05",2025-01-01 00:00,Before 1/25
+U,"1834 News CSPan Fri 2001 Oct 05",2025-01-01 00:00,Before 1/25
+U,"1835 News Ent Tonight D Lett Sat 2001 Oct 6-7",2025-01-01 00:00,Before 1/25
+U,"1836 News Ent Tonight D Lett. Sat 2001 Oct 6-7",2025-01-01 00:00,Before 1/25
+U,"1837 News War Sun 2001 Oct 07",2025-01-01 00:00,Before 1/25
+U,"1838 News Terrorist Attack and War Sun 2001 Oct 07",2025-01-01 00:00,Before 1/25
+U,"1839 News Ent Tonight D Lett Mon 2001 Oct 8",2025-01-01 00:00,Before 1/25
+U,"1840 News - 2nd day of war Mon 2001 Oct 08",2025-01-01 00:00,Before 1/25
+U,"1845 News Ent Tonight D Lett. Thurs 2001 Oct 11",2025-01-01 00:00,Before 1/25
+U,"1846 News War on Terrorism Thurs 2001 Oct 11",2025-01-01 00:00,Before 1/25
+U,"1848 News War On Terrorism Fri 2001 Oct 12",2025-01-01 00:00,Before 1/25
+U,"1850 News Ent D Lett Sun 2001 Oct 13",2025-01-01 00:00,Before 1/25
+U,"3334 News Entertainment Sat 9-8-01",2025-01-01 00:00,Before 1/25
+U,"047 News Magainze Shows Wed 96 July 17 - TWA 800 Crash",2025-01-01 00:00,Before 1/25
+U,"181 News Magazine Shows - Fri 98 Nov 06",2025-01-01 00:00,Before 1/25
+U,"183 News Magazine Sun 98 Nov 15",2025-01-01 00:00,Before 1/25
+U,"184 NEWS MAGAZINE SHOWS TUES 1998 NOV 17",2025-01-01 00:00,Before 1/25
+U,"186 News Mag Shows - Thurs 98 Nov 26",2025-01-01 00:00,Before 1/25
+U,"187 News Mag SHows Wed 98 Dec 02",2025-01-01 00:00,Before 1/25
+U,"188 News Mag Shows Sun 98 Dec 06",2025-01-01 00:00,Before 1/25
+U,"189 News Mag Shows - Fr 98 Dec 11",2025-01-01 00:00,Before 1/25
+U,"483 News Magazine Shows Mon 2001 Sept 3",2025-01-01 00:00,Before 1/25
+U,"484 News Magazine Shows Sun 2001 Sept 9",2025-01-01 00:00,Before 1/25
+U,"485 News Magazine Shows Wed 2001 Sept 12",2025-01-01 00:00,Before 1/25
+U,"486 News Magazine Shows Fri 2001 Sept 14",2025-01-01 00:00,Before 1/25
+U,"487 News Mag Shows Sun 2001 Sept 16",2025-01-01 00:00,Before 1/25
+U,"488 News Magazine Shows Tues 2001 Sept 18",2025-01-01 00:00,Before 1/25
+U,"489 News Magazine Shows Thurs 2001 Sept 20",2025-01-01 00:00,Before 1/25
+U,"491 News Magazine Shows Wed 2001 Sept 26",2025-01-01 00:00,Before 1/25
+U,"492 News Magazine Shows Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"493 News Magazine Shows Mon 2001 Oct 01",2025-01-01 00:00,Before 1/25
+U,"494 News Magazine Shows Wed 2001 Oct 03",2025-01-01 00:00,Before 1/25
+U,"495 News Magazine Shows War Sun 2001 Oct 07",2025-01-01 00:00,Before 1/25
+U,"496 News Magainze Shows Sun 2001 Oct 7",2025-01-01 00:00,Before 1/25
+U,"283 News Nightline - Mon 98 Nov 09",2025-01-01 00:00,Before 1/25
+U,"284 News & Night line Fri 98 Nov 13",2025-01-01 00:00,Before 1/25
+U,"476 News and Nightline Wed 2001 Sept 05",2025-01-01 00:00,Before 1/25
+U,"477 News and Nightline - Tues 2001 Sept 11",2025-01-01 00:00,Before 1/25
+U,"478 News Nightline Mon 2001 Sept 17",2025-01-01 00:00,Before 1/25
+U,"479 News Night Line Thurs 2001 Sept 20",2025-01-01 00:00,Before 1/25
+U,"480 News Nightline Tues 2001 Sept 25",2025-01-01 00:00,Before 1/25
+U,"481 News Nightline Mon 2001 Oct 1",2025-01-01 00:00,Before 1/25
+U,"482 News Nightline Fri 2001 Oct 05",2025-01-01 00:00,Before 1/25
+U,"U 120 Minutes - Sun 98 Nov 08",2025-01-01 00:00,Before 1/25
+U,"U 120 Minutes Sun 98 Nov 29",2025-01-01 00:00,Before 1/25
+U,"U Saturday Night Live 11-7-98 11-21-98",2025-01-01 00:00,Before 1/25
+U,"U Saturday Night Live 9-26-98 10-3-98",2025-01-01 00:00,Before 1/25
+U,"043 Rosie ODonnell Tues 98 Nov 03",2025-01-01 00:00,Before 1/25
+U,"045 Rosie O DOnnell - Fri 98 Nov 13",2025-01-01 00:00,Before 1/25
+U,"046 Rosie Thurs 98 Nov 1",2025-01-01 00:00,Before 1/25
+U,"047 Rosie O' Donnell Tue 98 Nov 24",2025-01-01 00:00,Before 1/25
+U,"048 Rosie ODonnell - Tues 98 Dec 1",2025-01-01 00:00,Before 1/25
+U,"249 Rosie O Donnell Tues 9-4-01",2025-01-01 00:00,Before 1/25
+U,"250 Rosie ODonnell - Mon 2001 Sept 10",2025-01-01 00:00,Before 1/25
+U,"251 Rosie O Donnell Thurs 2001 Sept 13",2025-01-01 00:00,Before 1/25
+U,"252 Rosie O Donnell mon 2001 Sept 17",2025-01-01 00:00,Before 1/25
+U,"253 Rosie O Donnell Wed 2001 Sept 19",2025-01-01 00:00,Before 1/25
+U,"254 Rosie O Donnell Tues 2001 Sept 25",2025-01-01 00:00,Before 1/25
+U,"255 Rosie O Donnell Fri 2001 Sept 28",2025-01-01 00:00,Before 1/25
+U,"256 Rosie ODonnell Thurs 2001 Oct 04",2025-01-01 00:00,Before 1/25
+U,"257 Rosie O Donnell Wed 2001 Oct 10",2025-01-01 00:00,Before 1/25
+U,"889 News Ent Tonight D Lett Sat 97 Aug 30-31",2025-01-01 00:01,Before 1/25
+U,"903 News Ent Tonight D Lett WED 1997 SEPT 24_25",2025-01-01 00:01,Before 1/25
+U,"891 News Ent Tonight D Lett Tues 97 Sep 02-03",2025-01-01 00:01,Before 1/25
+U,"896 News Ent Tonight D Lett Wed 97 Sep 10-11",2025-01-01 00:01,Before 1/25
+U,"1013 Entertain Tape Sun 97 May 17-24",2025-01-01 00:01,Before 1/25
+U,"897 News Ent Tonight D Lett Fri 97 Sep 12-14",2025-01-01 00:01,Before 1/25
+U,"24 News Entertain WED 1989 APR 04-12",2025-01-01 00:01,Before 1/25
+U,"0 Dawsons Creek Tue 98 Aug 25",2025-01-01 00:01,Before 1/25
+U,"1128 News Ent Tonight Fri 98 Dec 4-6",2024-11-11 13:01,Before 1/25
+U,"3271 Entertain Tape Wed 2001 Aug 8",2024-11-11 13:01,Before 1/25
+U,"3396 Entertain Tape Wed 2001 Oct 01",2024-11-11 13:01,Before 1/25
+U,"1695 Entertain Tape Fri 98 Nov 06-07",2024-11-11 16:36,Before 1/25
+U,"1699 Entertain Tape Sun 98 Nov 09",2024-11-11 19:57,Before 1/25
+U,"279 News Nightline Fri 98 Oct 16",2024-11-19 23:18,Before 1/25
+U,"1683 Entertain Tape South Park Mon 98 Oct 26-27",2024-11-20 14:16,Before 1/25
+U,"1687 Entertain Tape Thurs 98 Oct 29-31",2024-11-20 23:01,Before 1/25
+U,"1690 Entertain Tape Sun 98 Nov 01-02",2024-11-21 22:28,Before 1/25
+U,"1681 Entertain Tape Sune 98 Oct 25",2024-11-23 10:02,Before 1/25
+U,"1773 News Ent TOnight D Lett Fri 2001 Aug 31",2024-11-24 17:03,Before 1/25
+U,"757 Entertain Tape Tue 95 Dec 12-16",2024-11-26 17:05,Before 1/25
+U,"758 Entertain Tape Sat 95 Dec 16",2024-11-26 23:23,Before 1/25
+U,"756 Entertain Tape Sun 95 Dec 10-11",2024-12-03 14:41,Before 1/25
+U,"766 Ent Tape Sat 95 Dec 23",2024-12-05 19:28,Before 1/25
+U,"762 Entertain Tape WED 1995 DEC 20_21",2024-12-07 23:09,Before 1/25
+U,"754 Entertain Tape THUR 1995 DEC 07_08",2024-12-08 10:21,Before 1/25
+U,"49 Natl Geographic Explorer SUN 1998 SEPT 6",2024-12-08 18:45,Before 1/25
+U,"282 News NIghtline Mon 98 Nov 02",2025-01-21 11:09,Before 1/25
+U,"1661 Entertain Tape Wed Oct 98 Oct 14",2024-11-18 21:28,Before 1/25
+U,"1659 Entertain Tape Tues 98 Oct 13-14",2024-11-19 13:40,Before 1/25
+U,"1113 News Ent TOnight D Lett Thu 98 Nov 05-06",2024-11-21 13:39,Before 1/25
+U,"1675 Entertain Tape L King Thur 98 Oct 22",2024-11-22 10:02,Before 1/25
+U,"1643 Entertain Tape Sun 98 Oct 03-04",2024-11-22 17:21,Before 1/25
+U,"1655 Entertain Tape Wed 98 Oct 14-16",2024-11-22 23:40,Before 1/25
+U,"1683 Entertain Tape L King Wed 98 Sep 30",2024-11-23 16:24,Before 1/25
+U,"1624 Entertain Tape Tues 98 Sep 22-24",2024-11-23 23:14,Before 1/25
+U,"1656 Entertain Tape Mon 98 Oct 12",2024-11-24 10:04,Before 1/25
+U,"1652 Entertain Tape Sun 98 Oct 10",2024-11-24 23:17,Before 1/25
+U,"1672 News Ent Tonight D Lett Tue 98 Oct 20-21",2024-11-25 10:18,Before 1/25
+U,"1648 Entertain Tape L king Fri 98 Oct 09",2024-11-25 16:35,Before 1/25
+U,"1649 Entertain Tape Fri 98 Oct 09-10",2024-11-25 23:09,Before 1/25
+U,"1667 Entertaine Tape Sat 98 Oct 17-18",2024-11-26 09:19,Before 1/25
+U,"1679 ENtertain Tape Fri 98 Oct 23-25",2024-11-27 08:37,Before 1/25
+U,"1636 Entertain Tape Mon 98 Sep 28-30",2024-11-28 11:18,Before 1/25
+U,"167 News Mag Shows 78th Miss America Fri 98 Sep 18",2024-11-29 19:18,Before 1/25
+U,"1678 Entertain Tape Fri 98 Oct 23-25",2024-12-01 13:42,Before 1/25
+U,"893 News Ent Tonight D Lett Fri 97 Sep 06-05",2024-12-01 23:10,Before 1/25
+U,"1011 Entertain Tape 97 May 16-18",2024-12-02 10:02,Before 1/25
+U,"1133 Entertain Tape Wed 97 Sep 24",2024-12-02 16:49,Before 1/25
+U,"900 News Ent Tonight D Lett Thur 97 Sep 18-19",2024-12-02 23:14,Before 1/25
+U,"1134 Entertain Tape MON 1997 SEPT 22_25",2024-12-07 15:32,Before 1/25
+U,"1002 Entertain Tape Sat 97 May 3-4",2024-12-21 16:13,Before 1/25
+U,"886 News Ent Tonight D Lett FRI 1997 AUG 22_24",2024-12-23 14:25,Before 1/25
+U,"0 50th Annual Prime Time Emmy Awards Sun 98 Sep 13",2025-01-15 15:34,Before 1/25
+U,"3245 Entertain Tape Thurs 2001 July 26",2024-10-23 23:25,Before 1/25
+U,"3267 Entertain Tape Tues 2001 Aug 7",2024-10-23 23:26,Before 1/25
+U,"3268 Entertain Tape Tues 2001 Aug 7-8",2024-10-23 23:27,Before 1/25
+U,"3279 Entertain Tape Mon 2001 Aug 13",2024-10-23 23:29,Before 1/25
+U,"3281 Entertain Tape Tues 2001 Aug 14",2024-10-23 23:30,Before 1/25
+U,"3283 Entertain Tape Wed 2001 Aug 15",2024-10-23 23:30,Before 1/25
+U,"3287 Entertain Tape Fri 2001 Aug 17-18",2024-10-23 23:32,Before 1/25
+U,"3289 Entertain Tape Sat 2001 Aug 18-19",2024-10-23 23:34,Before 1/25
+U,"3291 Entertain Tape Sun 2001 Aug 19",2024-10-23 23:35,Before 1/25
+U,"3251 Entertain Tape Sun 2001 July 29",2024-11-11 20:54,Before 1/25
+U,"3282 Entertain Tape Tues 2001 Aug 14-15",2024-11-11 20:56,Before 1/25
+U,"1742 News Ent Tonight D Lett Tues 2001 July 31",2024-11-11 21:04,Before 1/25
+U,"3276 Entertain Tape Sat 2001 Aug 11-12",2024-11-11 21:06,Before 1/25
+U,"1741 News Ent Tonight D Lett Mon 2001 July 30",2024-11-11 21:12,Before 1/25
+U,"500 News Magazine Shows Fri 2001 Oct 19",2024-11-11 21:13,Before 1/25
+U,"1727 Entertain Tape Mon 98 Nov 23-25",2024-11-11 21:14,Before 1/25
+U,"1752 News Ent Tonight D Lett Fri 2001 Aug 08",2024-11-11 21:15,Before 1/25
+U,"3270 Entertain Tape Wed 2001 Aug 08",2024-11-11 21:16,Before 1/25
+U,"3253 Entertain Tape Tues 2001 July 31",2024-11-11 21:17,Before 1/25
+U,"1711 Entertain Tape Wed 98 Nov 18-19",2024-11-11 21:22,Before 1/25
+U,"Mystery Science Thetre 3000 Sat 98 Aug 15",2024-11-11 21:25,Before 1/25
+U,"1773 Entertain Tape Sat 98 Dec 26-27",2024-11-11 21:30,Before 1/25
+U,"1775 Entertain Tape Sat 98 Dec 26-30",2024-11-11 21:37,Before 1/25
+U,"1705 Entertain Tape Fri 98 Nov 13",2024-11-11 21:40,Before 1/25
+U,"1731 Entertain Tape Weds 98 Nov 25-26",2024-11-11 22:02,Before 1/25
+U,"1745 Entertain Tape Tues 98 Dec 08-13",2024-11-11 22:03,Before 1/25
+U,"Saturday Night Live Sat 98 Oct 17-Nov 07",2024-11-11 22:05,Before 1/25
+U,"1759 Entertain Tape Fri 98 Dec 18-19",2024-11-11 23:09,Before 1/25
+U,"1772 Entertain Tape Fri 98 Dec 25-26",2024-11-11 23:11,Before 1/25
+U,"1781 Entertaine Tape Thurs 98 Dec 31-01",2024-11-11 23:14,Before 1/25
+U,"176 News Magazine Shows Thurs 98 Oct 15",2024-11-15 15:16,Before 1/25
+U,"1668 Entertain Tape Sun 98 Oct 18",2024-11-18 21:28,Before 1/25
+U,"1647 Entertaine Tape Wed 98 Oct 07-08",2024-11-19 06:57,Before 1/25
+U,"1669 Entertain Tape L King Mon 98 Oct 19",2024-11-19 13:40,Before 1/25
+U,"0 Capetown S Africa Tunnel Touched By A Dolphin",2024-11-19 23:18,Before 1/25
+U,"1109 News Ent Tonight D Lett Mon 98 Oct 26-27",2024-11-20 14:15,Before 1/25
+U,"1685 Entertain Tape L King Tues 98 Oct 27",2024-11-20 23:02,Before 1/25
+U,"1112 News Ent TOnight D Lett Tues 98 Nov 3-4",2024-11-21 13:38,Before 1/25
+U,"1691 Entertain Tape Tue 98 Nov 03-04",2024-11-22 10:01,Before 1/25
+U,"0 Mystery Science Theatre 3000 Sat 98 May 09",2024-11-22 17:21,Before 1/25
+U,"169 News Magazine Shows Tues 98 Sep 22",2024-11-22 23:40,Before 1/25
+U,"1684 Entertain Tape Tues 98 Oct 27",2024-11-23 10:01,Before 1/25
+U,"1639 Entertain Tape Thur 98 Oct 01-05",2024-11-23 16:24,Before 1/25
+U,"5 J Carson Tue 89 Dec 5-8",2024-11-24 10:02,Before 1/25
+U,"3314 Entertain Larry K Thu  2001 Aug 30",2024-11-24 17:03,Before 1/25
+U,"1658 Entertain Tape mon 98 Oct 12",2024-11-24 23:17,Before 1/25
+U,"1665 Entertian Tape Fri 98 Oct 16-18",2024-11-25 10:17,Before 1/25
+U,"1651 Entertain Tape Fri 98 Oct 09-10",2024-11-25 16:35,Before 1/25
+U,"1650 Entertain Tape Fri 98 Oct 09-10",2024-11-25 23:09,Before 1/25
+U,"1677 Entertain Tape Fri 98 Oct 23-24",2024-11-26 09:18,Before 1/25
+U,"760 Entertain Tape Sun 95 Dec 17-19",2024-11-26 17:05,Before 1/25
+U,"890 News Ent Tonight D Lett Sun 97 Aug 31-01",2024-11-26 23:23,Before 1/25
+U,"1680 Entertain Tape Sun 98 Oct 25",2024-11-27 08:37,Before 1/25
+U,"1101 News Ent Tonight D Lett Sat 98 Oct 10-11",2024-11-27 16:15,Before 1/25
+U,"1103 News Ent Tonight D Lett Mon 98 Oct 12-13",2024-11-27 23:29,Before 1/25
+U,"1634 Entertasin Tape Sun 98 Sep 27",2024-11-28 11:17,Before 1/25
+U,"1605 Entertain Tape Frank S Sun 98 Dec 13",2024-11-29 19:18,Before 1/25
+U,"1686 Entertain Tape Thur 98 Oct 29",2024-12-01 13:40,Before 1/25
+U,"767 Entertain Tape Sat 94 Dec 23",2024-12-01 23:10,Before 1/25
+U,"1009 Entertain Tape Sun 97 May 11-15",2024-12-02 10:01,Before 1/25
+U,"1135 Entertain Tape Thur 97 Sep 25-27",2024-12-02 16:49,Before 1/25
+U,"899 News Ent Tonight D Lett Tue 97 Sep 16-17",2024-12-02 23:14,Before 1/25
+U,"1002 Entertain Tape SAT 1997 MAY 03_04",2024-12-05 19:27,Before 1/25
+U,"1131 Entertain Tape L King_SHowbiz Today FRI 1997 SEP 19",2024-12-07 23:09,Before 1/25
+U,"0 120 Minutes SUN 1998 SEPT 13",2024-12-08 10:19,Before 1/25
+U,"1001 Entertain Tape SAT 1997 MAY 03",2024-12-08 18:47,Before 1/25
+U,"1811 News Ent Tonight D Lett Sun 2001 Sep 23",2024-12-21 16:13,Before 1/25
+U,"887 News Ent Tonight D Let TUES 1997 AUG 26_28",2024-12-23 14:23,Before 1/25
+U,"3393 Entertain Tape Mon 2001 Oct 8, 11",2024-10-23 23:43,Before 1/25
+U,"3311 Entertain Tape Wed 2001 Aug 29",2024-10-04 22:24,Before 1/25
+U,"3244 Entertain Tape Thurs 2001 Jul 26",2024-10-05 15:38,Before 1/25
+U,"3312 Entertain Tape Wed 2001 Aug 29-30",2024-10-06 06:31,Before 1/25
+U,"3252 Entertainment Tape Mon 2001 Jul 30",2024-10-06 13:25,Before 1/25
+U,"3280 Entertain Tape Tues 2001 Aug 14",2024-10-06 19:44,Before 1/25
+U,"3377 Entertain Tape + Terror Attack Sun 2001 Sep 30",2024-10-07 20:48,Before 1/25
+U,"1823 News Ent Tonight D Lett Sun 2001 Sep 30",2024-10-08 05:20,Before 1/25
+U,"3384 Entertain Tape cspan Thurs 2001 Oct 04",2024-10-08 23:15,Before 1/25
+U,"3256 Entertain Tape Wed 2001 Aug 1",2024-10-10 00:24,Before 1/25
+U,"3256 Entertain Tape Wed 2001 Aug 01",2024-10-11 07:09,Before 1/25
+U,"3255 Entertain Tape Wed 2001 Aug 01",2024-10-14 06:05,Before 1/25
+U,"3272 Entertain Tape Thurs 2001 Aug 09",2024-10-19 02:30,Before 1/25
+U,"3269 Entertain Tape Tues 2001 Aug 07-09",2024-10-19 16:55,Before 1/25
+U,"3301 Entertain Tape THurs 2001 Aug 23-24",2024-10-20 08:35,Before 1/25
+U,"3302 Entertain Tape Fri 2001 Aug 24",2024-10-21 07:45,Before 1/25
+U,"3401 Entertain Tape SAT 2001 OCT 13",2024-10-23 03:41,Before 1/25
+U,"1833 News Entertain Tonight FRI 2001 OCT 05",2024-10-23 12:13,Before 1/25
+U,"1754 Entertain Mon 98 Dec 14-15",2024-10-23 21:16,Before 1/25
+U,"1763 Entertain Tape SAT 1998 DEC 19_27",2024-10-23 21:34,Before 1/25
+U,"50 Rosie Thu 98 Dec 10-16",2024-10-23 21:45,Before 1/25
+U,"3286 Entertain Tape Fri 2001 Aug 17",2024-10-23 23:31,Before 1/25
+U,"3304 Entertain Tape Fri 2001 Aug 24-26",2024-10-23 23:36,Before 1/25
+U,"3305 Entertain Tape Fri 2001 Aug 24-26",2024-10-23 23:38,Before 1/25
+U,"3317 Entertain Tape Fri 2001 Aug 31",2024-10-23 23:39,Before 1/25
+U,"3326 Entertain Tape Wed 2001 Sept 05",2024-10-23 23:40,Before 1/25
+U,"3344 Entertain Tape Fri 2001 Sept 14",2024-10-23 23:41,Before 1/25
+U,"3371 Entertain Tape Fri 2001 Sept 28-30",2024-10-23 23:42,Before 1/25
+U,"3399 Entertain Tape Fri 2001 Oct 12",2024-10-23 23:45,Before 1/25
+U,"3402 Entertain Tape Sat 2001 Oct 13-14",2024-10-23 23:46,Before 1/25
+U,"806 News CSpan Thurs 2001 Sept 20-21",2024-10-24 00:56,Before 1/25
+U,"1143 NewsEnt Tue 98 Dec 29-31",2024-10-24 01:00,Before 1/25
+U,"1040 Entertain Sat 97 Jun 28-28",2024-10-24 01:01,Before 1/25
+U,"977 Entertain Sat 96 Sep 14-15",2024-10-24 01:02,Before 1/25
+U,"1735 Entertain Sun 98 Nov 29-30",2024-10-24 01:04,Before 1/25
+U,"1742 Entertain Sun 98 Dec 6-10",2024-10-24 01:05,Before 1/25
+U,"1724 Entertain Sun 98 Nov 22-22",2024-10-24 01:07,Before 1/25
+U,"52 NatGeo Sun 98 Oct 25-15",2024-10-24 01:08,Before 1/25
+U,"949 Entertain Sun 96 Aug 18-20",2024-10-24 01:09,Before 1/25
+U,"1141 NewsEnt Sat 98 Dec 26-27",2024-10-24 01:11,Before 1/25
+U,"3246 Entertain Tape Fri 2001 July 27-29",2024-11-11 13:20,Before 1/25
+U,"65 J Carson Wed 89 Mar 15-Thu 89 Mar 16",2024-11-11 13:25,Before 1/25
+U,"3277 Entertain Tape Sat 2001 Aug 11-12",2024-11-11 13:32,Before 1/25
+U,"67 J Carson Thu 89 Mar 30-Tue 89 April 4",2024-11-11 13:33,Before 1/25
+U,"473 News Magazine Shows Mon 2001 July 30",2024-11-11 13:39,Before 1/25
+U,"658 J Leno Mon 2001 Oct 22-25",2024-11-11 13:41,Before 1/25
+U,"1743 News Entertain Wed 2001 Aug 01",2024-11-11 15:08,Before 1/25
+U,"1753 Entertain Tape Sun 98 Dec 13",2024-11-11 15:17,Before 1/25
+U,"1138 News Ent Tonight Mon 98 Dec 21-22",2024-11-11 15:23,Before 1/25
+U,"1753 News Ent Tonight Sat 2001 Aug 11",2024-11-11 15:27,Before 1/25
+U,"3275 Entertain Tape Fri 2001 Aug 10-12",2024-11-11 15:27,Before 1/25
+U,"1750 News Entertain Tonight Wed 2001 Aug 08",2024-11-11 15:29,Before 1/25
+U,"3254 Entertain Tape Tues 2001 July 31-01",2024-11-11 15:37,Before 1/25
+U,"1841 News Ent Tonight Tues 2001 Oct 9",2024-11-11 15:38,Before 1/25
+U,"3403 Entertain Tape Sat 2001 Oct 13-14",2024-11-11 15:40,Before 1/25
+U,"1847 News Ent Tonight Fri 2001 Oct 12",2024-11-11 15:47,Before 1/25
+U,"1744 Entertain Tape Mon 98 Dec 07-09",2024-11-11 15:48,Before 1/25
+U,"1764 Entertain Tape Sun 98 Dec 20",2024-11-11 15:50,Before 1/25
+U,"1127 News Ent Tonight Wed 98 Dec 2-4",2024-11-11 15:51,Before 1/25
+U,"1125 News Entertainment Tonight Sat 98 Nov 28-29",2024-11-11 15:52,Before 1/25
+U,"0 Sat Night Live Sat 1998 Feb 28",2024-11-11 15:53,Before 1/25
+U,"1131 News Ent Tonight Wed 98 Dec 9-11",2024-11-11 15:55,Before 1/25
+U,"185 News Magazine Shows Sun 98 Nov 22",2024-11-11 15:57,Before 1/25
+U,"1140 News Ent Tonight D Lett Fri 98 Dec 25-28",2024-11-11 16:03,Before 1/25
+U,"179 News Magazine Shows Tues 98 Oct 27",2024-11-11 19:55,Before 1/25
+U,"1768 Entertain Tape Tues 98 Dec 22-23",2024-11-11 20:07,Before 1/25
+U,"40 Rosie O Donnell Fri 98 Oct 16",2024-11-11 20:10,Before 1/25
+U,"1747 Entertain Tape L King Thurs 98 Dec 10",2024-11-11 20:13,Before 1/25
+U,"57 J Carson Fri 89 Jan 27-01",2024-11-11 21:00,Before 1/25
+U,"503 News Magazine Shows Sat 2001 Oct 27",2024-11-11 21:01,Before 1/25
+U,"64 J Carson Thu 89 Mar 9-14",2024-11-11 21:02,Before 1/25
+U,"1843 News Ent Tonight D Lett Wed 2001 Oct 10",2024-11-11 21:17,Before 1/25
+U,"1831 News Ent Tonight D Lett Thu 2001 Oct 04",2024-11-11 21:18,Before 1/25
+U,"3383 Entertain Tape Thu 2001 Oct 04",2024-11-11 21:19,Before 1/25
+U,"3386 Entertain Tape MSNBC Fri 2001 Oct 5",2024-11-11 21:21,Before 1/25
+U,"1136 News Ent Tonight D Lett Sat 98 Dec 19-20",2024-11-11 21:23,Before 1/25
+U,"1123 News Ent TonightD Lett Mon 98 Nov 23",2024-11-11 21:24,Before 1/25
+U,"1126 News Ent Tonight D Lett Mon 98 Nov 30-01",2024-11-11 21:24,Before 1/25
+U,"288 News Nightline Fri 98 Dec 04",2024-11-11 21:28,Before 1/25
+U,"1766 Entertaine Tape Mon 98 Dec 21-22",2024-11-11 21:43,Before 1/25
+U,"1697 Entertain Tape Fri 98 Nov 06-08",2024-11-11 22:01,Before 1/25
+U,"1769 Entertain Tape Thurs 98 Dec 22-23",2024-11-11 22:48,Before 1/25
+U,"38 Rosie O Donnell Tue 98 Oct 06",2024-11-11 22:50,Before 1/25
+U,"39 Rosie O Donnell Tues 98 Oct 13",2024-11-11 22:51,Before 1/25
+U,"174 News Magazine Shows Fri 98 Oct 09",2024-11-11 22:54,Before 1/25
+U,"175 News Magazine Shows Mon 98 Oct 12",2024-11-11 22:54,Before 1/25
+U,"176 News Mag Shows THU 1998 OCT 15",2024-11-11 22:56,Before 1/25
+U,"178 News Magazine Shows Wed 98 Oct 21",2024-11-11 22:56,Before 1/25
+U,"180 News Mag Shows Sun 98 Nov 01",2024-11-11 22:59,Before 1/25
+U,"287 News Nightline Mon 98 Nov 30",2024-11-11 23:02,Before 1/25
+U,"289 News Nightline Thu 98 Dec 10",2024-11-11 23:05,Before 1/25
+U,"1757 Entertaine Tape Thurs 98 Dec 17",2024-11-11 23:13,Before 1/25
+U,"1108 News Ent Tonight D Lett Sun 98 Oct 25-28",2024-11-12 13:40,Before 1/25
+U,"1118 News Ent Tonight D Lett Sun 98 Nov 15-17",2024-11-12 13:41,Before 1/25
+U,"1134 News Ent Tonight D Lett Tues 98 Dec 15-16",2024-11-12 13:41,Before 1/25
+U,"50 Nat Geo Explorer Sun 98 Aug 02",2024-11-15 15:09,Before 1/25
+U,"51 Rosie O Donnell Wed 98 Dec 16",2024-11-15 15:13,Before 1/25
+U,"1682 Entertain Tape Mon 98 Oct 26-28",2024-11-20 21:55,Before 1/25
+U,"1673 Entertain Tape Wed 1998 OCT 21-23",2024-11-22 07:38,Before 1/25
+U,"1653 Entertain Tape Sun 98 Oct 10",2024-11-24 08:30,Before 1/25
+U,"1666 Entertain Tape Fri 98 Oct 16-18",2024-11-25 07:38,Before 1/25
+U,"1657 Entertain Tape Mon 98 Oct 12",2024-11-25 16:33,Before 1/25
+U,"1654 Entertain Tape Sun 98 Oct 11",2024-11-25 23:08,Before 1/25
+U,"1676 News Ent TOnight D Lett THur 98 Oct 22-23",2024-11-26 08:39,Before 1/25
+U,"166 News Mag Shows Wed 98 Sep 16",2024-11-30 21:38,Before 1/25
+U,"1111 News Ent Tonight D Lett Sun 98 Nov 01-02",2024-12-01 07:09,Before 1/25
+U,"165 News Magazine Shows Mon 98 Sep 07",2024-12-01 18:28,Before 1/25
+U,"1017 Entertain Tape SUN 1997 MAY 25",2024-12-02 04:00,Before 1/25
+U,"1018 Entertain Tape Mon 97 May 26",2024-12-02 16:49,Before 1/25
+U,"901 News Ent Tonight D Lett Sat 97 Sep 20-22",2024-12-02 23:14,Before 1/25
+U,"898 News Ent TOnight D Lett Sun 97 Sep 14-16",2024-12-03 20:51,Before 1/25
+U,"1004 Entertain Tape FRI 1997 MAY 9",2024-12-04 03:48,Before 1/25
+U,"1140 Entertain Tape SUN 1997 SEP 28",2024-12-06 04:54,Before 1/25
+U,"1012 Entertain Tape SAT 1997 MAY 17-18",2024-12-08 08:46,Before 1/25
+U,"755 Entertain Tape SAT 1995 DEC 09-10",2024-12-08 20:16,Before 1/25
+U,"3396 Entertain Tape WED 2001 OCT 10 L King_AccessHollywood",2024-12-17 05:56,Before 1/25
+U,"3374 Entertain Tape L_King MON 2001 SEPT 24",2024-12-17 23:05,Before 1/25
+U,"1816 News Ent Tonight Wed 2001 Sep 26",2024-12-20 22:31,Before 1/25
+U,"1811 News Entertain Tonight D Let SUN 2001 SEP 23",2024-12-22 07:10,Before 1/25
+U,"1116 News Ent Tonight D Lett Wed 98 Nov 11-13",2024-11-12 15:15,Before 1/25
+U,"1641 ENtertain Tape Fri 98 Oct 02-04",2024-11-12 22:33,Before 1/25
+U,"277 News Nightline Wed 98 Oct 07",2024-11-13 06:57,Before 1/25
+U,"276 News Nightline Thurs 98 Oct 01",2024-11-13 13:36,Before 1/25
+U,"35 Rosie O Donnell Tues 98 Sep 22",2024-11-13 21:08,Before 1/25
+U,"1097 News Ent Tonight D Lett Fri 98 Oct 02-04",2024-11-14 06:57,Before 1/25
+U,"1694 Entertain Tape Tues 98 Nov 03",2024-11-14 22:51,Before 1/25
+U,"33 Rosie O Donnell Fri 98 Sep 11",2024-11-15 10:02,Before 1/25
+U,"0 Clinton's Grand Jury Testimony Mon 98 Sep 21",2024-11-15 17:01,Before 1/25
+U,"1105 News Etn Tonight D Lett Fri 98 Oct 16-17",2024-11-15 23:20,Before 1/25
+U,"1099 News Ent Tonight D Lett Tue 98 Oct 06-07",2024-11-16 10:35,Before 1/25
+U,"173 News Magazine Shows Sun 98 Sep 13",2024-11-12 07:00,Before 1/25
+U,"1114 News Ent Tonight D Lett Sun 98 Nov 08",2024-11-12 15:19,Before 1/25
+U,"445 J Leno Wed 98 Sept 30-06",2024-11-12 22:32,Before 1/25
+U,"42 Rosie O Donnell Wed 98 Oct 28",2024-11-13 06:57,Before 1/25
+U,"278 News Nightline Tues 98 Oct 13",2024-11-13 13:35,Before 1/25
+U,"1104 News Ent Tonight D Lett Wed 98 Oct 14-15",2024-11-15 23:13,Before 1/25
+U,"1642 Entertain Tape Fri 98 Oct 02-04",2024-11-15 23:17,Before 1/25
+U,"1674 Entertain Tape Wed 98 Oct 21-25",2024-11-15 23:24,Before 1/25
+U,"34 Rosie O Donnell Mon 98 Sep 14",2024-11-15 23:30,Before 1/25
+U,"36 Rosie O Donnell Mon 98 Sep 28",2024-11-15 23:35,Before 1/25
+U,"444 J Leno Thurs 98 Sep 24-29",2024-11-15 23:38,Before 1/25
+U,"1106 News Etn Tonight D Lett Sat 98 Oct 18-18",2024-11-15 23:42,Before 1/25
+U,"275 News Nightline Fri 98 Sep 25",2024-11-16 10:33,Before 1/25
+U,"0 XXIX Olympics (Beijing) - Fri 2008 Aug 15",2025-01-01 00:00,Before 1/25
+U,"0 Dawsons Creek Wed 2002 Oct 02",2025-01-01 00:00,Before 1/25
