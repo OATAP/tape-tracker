@@ -363,6 +363,33 @@
             border-radius: 8px;
             border: 1px solid rgba(0, 255, 255, 0.2);
         }
+
+        tr {
+            transition: background-color 0.2s ease;
+        }
+
+        tr:hover {
+            background-color: #003838 !important; /* Make hover effect more pronounced */
+        }
+
+        tbody tr {
+            cursor: pointer;
+        }
+
+        .date-search input {
+            background: #001f1f;
+            border: 1px solid #0ff;
+            color: #0ff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .date-search input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            background: #002f2f;
+        }
     </style>
 </head>
 <body>
@@ -372,6 +399,9 @@
     <div class="controls">
         <div class="search-box">
             <input type="text" id="search" placeholder="Search..." />
+        </div>
+        <div class="date-search">
+            <input type="date" id="dateSearch" placeholder="Search Tape Date..." />
         </div>
         <div class="deck-filter">
             <select id="deckFilter">
@@ -392,7 +422,7 @@
         </div>
     </div>
     <div class="database-note">
-        Note: This includes all tapes recorded starting January 25, 2025. Over 600 tapes were recorded before this database was created. Those tapes may eventually be added to the database but currently are not.
+        Note: This includes all tapes recorded starting January 25, 2025. All tapes prior to January 25, 2025 are manually entered and do not contain deck data or in some cases, timestamp data.
     </div>
 
     <script>
@@ -408,32 +438,72 @@
         let selectedDeck = 'ALL';
         let selectedTimeRange = 'all-time';
         let currentMonthPage = 1;
-        const monthsPerPage = 3;
+        let currentYearPage = 1;
+        const monthsPerPage = 5;
         let monthYearCounts = {};
+        let yearCounts = {};
         let monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
         function extractTapeNumber(vhsString) {
             if (!vhsString || typeof vhsString !== 'string') return '';
-            const match = vhsString.match(/^(\d+)/);
+            
+            // Remove the leading deck letter (U, A, B, C) and any quotes
+            const withoutDeck = vhsString.replace(/^["']?[UABC]\s*,?\s*["']?/, '');
+            
+            // Match the first sequence of digits, ignoring leading zeros
+            const match = withoutDeck.match(/^0*(\d+)/);
             return match ? match[1] : '';
         }
 
         function parseVHSDate(label) {
             if (!label) return null;
             
-            // Match patterns like "97 May 15" or "95 Dec 07" or "97 Aug 08-10"
-            const match = label.match(/(\d{2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}(?:-\d{1,2})?)/i);
+            // Try matching 4-digit year format first: "2001 Sept 28"
+            let match = label.match(/(\d{4})\s+(Jan|Feb|Mar|Apr|May|Jun|June|Jul|July|Aug|Sep|Sept|Oct|Nov|Dec)\s+(\d{1,2}(?:-\d{1,2})?)/i);
             
             if (match) {
-                const year = parseInt('19' + match[1]); // Convert '97' to 1997
+                const year = parseInt(match[1]); // Already 4 digits
                 const month = {
-                    'jan': 0, 'feb': 1, 'mar': 2, 'apr': 3, 'may': 4, 'jun': 5,
-                    'jul': 6, 'aug': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dec': 11
+                    'jan': 0, 'feb': 1, 'mar': 2, 'apr': 3, 'may': 4, 'jun': 5, 'june': 5,
+                    'jul': 6, 'july': 6, 'aug': 7, 'sep': 8, 'sept': 8, 'oct': 9, 'nov': 10, 'dec': 11
                 }[match[2].toLowerCase()];
-                const day = parseInt(match[3].split('-')[0]); // Take first day if range
-                
+                const day = parseInt(match[3].split('-')[0]);
                 return new Date(year, month, day);
             }
+            
+            // Try matching 2-digit year format: "97 May 15"
+            match = label.match(/(\d{2})\s+(Jan|Feb|Mar|Apr|May|Jun|June|Jul|July|Aug|Sep|Sept|Oct|Nov|Dec)\s+(\d{1,2}(?:-\d{1,2})?)/i);
+            
+            if (match) {
+                let year = parseInt(match[1]);
+                if (year >= 0 && year <= 40) {
+                    year += 2000;
+                } else {
+                    year += 1900;
+                }
+                const month = {
+                    'jan': 0, 'feb': 1, 'mar': 2, 'apr': 3, 'may': 4, 'jun': 5, 'june': 5,
+                    'jul': 6, 'july': 6, 'aug': 7, 'sep': 8, 'sept': 8, 'oct': 9, 'nov': 10, 'dec': 11
+                }[match[2].toLowerCase()];
+                const day = parseInt(match[3].split('-')[0]);
+                return new Date(year, month, day);
+            }
+            
+            // Try matching format: "9-8-01"
+            match = label.match(/(\d{1,2})-(\d{1,2})-(\d{2})/);
+            
+            if (match) {
+                let year = parseInt(match[3]);
+                if (year >= 0 && year <= 40) {
+                    year += 2000;
+                } else {
+                    year += 1900;
+                }
+                const month = parseInt(match[1]) - 1; // Subtract 1 as months are 0-based
+                const day = parseInt(match[2]);
+                return new Date(year, month, day);
+            }
+            
             return null;
         }
 
@@ -480,6 +550,87 @@
                 });
         }
 
+        function parseDateRange(label) {
+            if (!label) return null;
+            
+            // Handle "MM-DD-YY MM-DD-YY" format (like "11-7-98 11-21-98")
+            const dashFormat = label.match(/(\d{1,2})-(\d{1,2})-(\d{2})(?:\s+(\d{1,2})-(\d{1,2})-(\d{2}))?/);
+            if (dashFormat) {
+                const dates = [];
+                // First date
+                let year = parseInt(dashFormat[3]);
+                year = year >= 0 && year <= 40 ? 2000 + year : 1900 + year;
+                dates.push(new Date(Date.UTC(year, parseInt(dashFormat[1]) - 1, parseInt(dashFormat[2]))));
+                
+                // Second date if exists
+                if (dashFormat[4]) {
+                    year = parseInt(dashFormat[6]);
+                    year = year >= 0 && year <= 40 ? 2000 + year : 1900 + year;
+                    dates.push(new Date(Date.UTC(year, parseInt(dashFormat[4]) - 1, parseInt(dashFormat[5]))));
+                }
+                return { dates };
+            }
+            
+            // Handle various text formats
+            const datePatterns = [];
+            let currentYear, currentMonth;
+            
+            // Match year and month if present at start (e.g., "89 June" or "2001 Sept")
+            const yearMonthMatch = label.match(/(\d{2,4})\s+(Jan|Feb|Mar|Apr|May|Jun|June|Jul|July|Aug|Sep|Sept|Oct|Nov|Dec)/i);
+            if (yearMonthMatch) {
+                currentYear = parseInt(yearMonthMatch[1]);
+                if (currentYear < 100) {
+                    currentYear = currentYear >= 0 && currentYear <= 40 ? 2000 + currentYear : 1900 + currentYear;
+                }
+                currentMonth = {
+                    'jan': 0, 'feb': 1, 'mar': 2, 'apr': 3, 'may': 4, 'jun': 5, 'june': 5,
+                    'jul': 6, 'july': 6, 'aug': 7, 'sep': 8, 'sept': 8, 'oct': 9, 'nov': 10, 'dec': 11
+                }[yearMonthMatch[2].toLowerCase()];
+            }
+            
+            // Find all day patterns
+            const dayPatterns = label.matchAll(/(?:(?:Jan|Feb|Mar|Apr|May|Jun|June|Jul|July|Aug|Sep|Sept|Oct|Nov|Dec)\s+)?(\d{1,2})(?:\s*-\s*(\d{1,2})|,\s*(\d{1,2}))?/gi);
+            
+            for (const match of dayPatterns) {
+                const startDay = parseInt(match[1]);
+                
+                if (match[2]) { // Range of days (e.g., "13-16")
+                    const endDay = parseInt(match[2]);
+                    for (let day = startDay; day <= endDay; day++) {
+                        datePatterns.push(new Date(Date.UTC(currentYear, currentMonth, day)));
+                    }
+                } else if (match[3]) { // Comma-separated days (e.g., "23, 30")
+                    datePatterns.push(new Date(Date.UTC(currentYear, currentMonth, startDay)));
+                    datePatterns.push(new Date(Date.UTC(currentYear, currentMonth, parseInt(match[3]))));
+                } else {
+                    datePatterns.push(new Date(Date.UTC(currentYear, currentMonth, startDay)));
+                }
+            }
+            
+            return datePatterns.length > 0 ? { dates: datePatterns } : null;
+        }
+
+        function isDateInRange(searchDate, dateRange) {
+            if (!dateRange || !dateRange.dates) return false;
+            
+            // Convert search date to start of day for comparison
+            const searchTime = new Date(Date.UTC(
+                searchDate.getFullYear(),
+                searchDate.getMonth(),
+                searchDate.getDate()
+            )).getTime();
+            
+            // Check if search date matches any of the dates in the range
+            return dateRange.dates.some(date => {
+                const rangeTime = new Date(Date.UTC(
+                    date.getFullYear(),
+                    date.getMonth(),
+                    date.getDate()
+                )).getTime();
+                return searchTime === rangeTime;
+            });
+        }
+
         function filterData() {
             let filtered = [...tableData];
             
@@ -491,10 +642,29 @@
             // Apply search filter
             if (searchTerm) {
                 filtered = filtered.filter(row => 
-                    Object.values(row).some(value => 
-                        value.toString().toLowerCase().includes(searchTerm.toLowerCase())
-                    )
+                    Object.values(row).some(value => {
+                        // Skip null/undefined values and hidden fields starting with _
+                        if (value === null || value === undefined || 
+                            (typeof value === 'string' && value.startsWith('_'))) {
+                            return false;
+                        }
+                        return value.toString().toLowerCase().includes(searchTerm.toLowerCase());
+                    })
                 );
+            }
+
+            // Apply date search filter
+            const dateSearch = document.getElementById('dateSearch').value;
+            if (dateSearch) {
+                // Parse the date parts and create a UTC date to avoid timezone issues
+                const [year, month, day] = dateSearch.split('-').map(Number);
+                const searchDate = new Date(Date.UTC(year, month - 1, day));
+                
+                filtered = filtered.filter(row => {
+                    const dateRange = parseDateRange(row.Label);
+                    if (!dateRange) return false;
+                    return isDateInRange(searchDate, dateRange);
+                });
             }
 
             // Apply deck filter
@@ -538,7 +708,8 @@
                 return acc;
             }, {});
 
-            const yearCounts = timeFilteredData.reduce((acc, row) => {
+            // Update the global yearCounts
+            yearCounts = timeFilteredData.reduce((acc, row) => {
                 if (row._tapeDate) {
                     const year = row._tapeDate.getFullYear();
                     acc[year] = (acc[year] || 0) + 1;
@@ -607,15 +778,37 @@
                     <div class="stats-section">
                         <h3>Tapes by Year</h3>
                         <div class="stats-data monthly-grid">
-                            ${Object.entries(yearCounts)
-                                .sort(([a], [b]) => yearCounts[b] - yearCounts[a])
-                                .map(([year, count]) => `
+                            ${(() => {
+                                const sortedYears = Object.entries(yearCounts)
+                                    .sort(([a], [b]) => yearCounts[b] - yearCounts[a]);
+                                
+                                const totalYears = sortedYears.length;
+                                const startIdx = (currentYearPage - 1) * monthsPerPage;
+                                const endIdx = startIdx + monthsPerPage;
+                                const currentYears = sortedYears.slice(startIdx, endIdx);
+                                
+                                return currentYears.map(([year, count]) => `
                                     <div class="month-item">
                                         <div class="month-label">${year}</div>
                                         <div class="month-count">${count}</div>
                                         <div class="month-bar" style="--count-percent: ${(count / Math.max(...Object.values(yearCounts)) * 100)}%"></div>
                                     </div>`
-                                ).join('')}
+                                ).join('');
+                            })()}
+                        </div>
+                        <div class="month-nav">
+                            <button onclick="prevYearPage()" 
+                                    ${currentYearPage <= 1 ? 'disabled' : ''}>
+                                ←
+                            </button>
+                            <span class="month-page-info">
+                                Showing ${(currentYearPage - 1) * monthsPerPage + 1}-${Math.min(currentYearPage * monthsPerPage, Object.keys(yearCounts).length)} 
+                                of ${Object.keys(yearCounts).length}
+                            </span>
+                            <button onclick="nextYearPage()" 
+                                    ${currentYearPage * monthsPerPage >= Object.keys(yearCounts).length ? 'disabled' : ''}>
+                                →
+                            </button>
                         </div>
                     </div>
 
@@ -668,6 +861,7 @@
             document.getElementById('timeRange').addEventListener('change', (e) => {
                 selectedTimeRange = e.target.value;
                 currentMonthPage = 1;
+                currentYearPage = 1;
                 updateDisplay();
             });
         }
@@ -719,6 +913,17 @@
             const tbody = table.createTBody();
             data.forEach(row => {
                 const tr = tbody.insertRow();
+                // Add cursor style and hover effect
+                tr.style.cursor = 'pointer';
+                
+                // Add click handler to the entire row
+                tr.onclick = () => {
+                    const tapeNumber = row['Tape #'];
+                    const firstWord = row['Label'].split(' ')[0];
+                    const searchUrl = `https://archive.org/details/@oakley_tapes?query=${tapeNumber}+${firstWord}`;
+                    window.open(searchUrl, '_blank');
+                };
+
                 headers.forEach(header => {
                     const td = tr.insertCell();
                     td.textContent = row[header] || '';
@@ -759,6 +964,11 @@
                     updateDisplay();
                 }
             });
+
+            document.getElementById('dateSearch').addEventListener('input', (e) => {
+                currentPage = 1;
+                updateDisplay();
+            });
         }
 
         function updateTable() {
@@ -788,6 +998,21 @@
         function prevMonthPage() {
             if (currentMonthPage > 1) {
                 currentMonthPage--;
+                updateStats();
+            }
+        }
+
+        function nextYearPage() {
+            const totalYears = Object.keys(yearCounts).length;
+            if (currentYearPage * monthsPerPage < totalYears) {
+                currentYearPage++;
+                updateStats();
+            }
+        }
+
+        function prevYearPage() {
+            if (currentYearPage > 1) {
+                currentYearPage--;
                 updateStats();
             }
         }
